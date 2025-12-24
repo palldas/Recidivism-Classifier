@@ -1,7 +1,7 @@
 # Mitigating Bias in Recidivism Classification Models
 
 Evaluating recidivism prediction models and comparing group-wise performance across two racial groups.
-If unable to render code block in GitHub due to size, view code in [Colab Notebook](https://colab.research.google.com/drive/1-b4lKpZiMdq62xKFwO-fQdZoQP8PAjCO?usp=sharing).
+If unable to render code block in GitHub due to size, view code in [Colab Notebook](https://colab.research.google.com/drive/1KxKrAN7jPEUwEO77yr07-gtadcjAkWmW?usp=sharing).
 
 ## Overview
 This notebook:
@@ -23,6 +23,14 @@ When you run the notebook, you should see:
 - Confusion matrices per group
 - Dimensionality reduction + clustering visualizations
 - Group-wise metric comparisons and basic statistical tests
+
+## Tech Stack
+- Python (Jupyter/Colab)
+- pandas, NumPy
+- scikit-learn (preprocessing, metrics, RandomForest, KNN, KMeans, DBSCAN, StratifiedKFold)
+- UMAP-learn, t-SNE, PCA (dimensionality reduction / visualization)
+- Matplotlib, Seaborn (plots)
+- SciPy (t-test)
 
 ## Notes / limitations
 - Fairness here is assessed via **group-wise performance comparisons** (F1/precision/recall + confusion matrices). This is not a full fairness audit (e.g., equalized odds, calibration).
